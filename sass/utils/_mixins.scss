@@ -1,0 +1,38 @@
+// центрирование элемента
+// вставить: @include push--auto;
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+// трансформация, плавный переход
+// вставить: @include transit($what $when $how)
+
+@mixin transit($what: all, $when: 250ms, $how: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $what $when $how;
+}
+
+// скругление универсальное
+// вставить: @include br(4px);
+
+@mixin br($rad: 4px) {
+  border-radius: $rad;
+}
+
+// новый миксин
+
+@mixin transit($what: all, $when: 250ms, $how: cubic-bezier(0.4, 0, 0.2, 1)) {
+  @if type_of($what) == "list" {
+    $properties: "";
+    @each $property in $what {
+      $properties: $properties + $property $when $how + ",";
+    }
+    transition: $properties;
+  }
+  @if type_of($what) == "string" {
+    transition: $what $when $how;
+  }
+}

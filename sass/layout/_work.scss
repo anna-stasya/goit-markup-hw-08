@@ -1,0 +1,51 @@
+.section-scroll {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.picture {
+  margin: -15px;
+}
+
+.picture-box {
+  margin: 15px;
+  width: 370px;
+}
+
+.thumb-animation {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.thumb-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  .thumb-animation:hover & {
+    transform: translateX(0);
+  }
+}
+
+.text-work {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--text-title-button-color);
+}

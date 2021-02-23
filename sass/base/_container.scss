@@ -1,0 +1,14 @@
+.container {
+  width: 1200px;
+  @include push--auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+
+  /* outline: 2px solid coral; */
+
+  &.hat {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+  }
+}

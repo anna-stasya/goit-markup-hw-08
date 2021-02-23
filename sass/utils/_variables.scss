@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text-color: #212121;
+  --paragraph-color: #757575;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --button-hover-color: #2196f3;
+  --button-background-color: #f5f4fa;
+  --text-title-button-color: #ffffff;
+  --background-footer: #2f303a;
+  --color-black: #000000;
+  --color-icon: #afb1b8;
+  --border-line: #eeeeee;
+}

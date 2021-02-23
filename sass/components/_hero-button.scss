@@ -1,0 +1,15 @@
+.hero-button {
+  display: inline-block;
+  @include br(4px);
+  border: none;
+  padding: 10px 32px;
+  min-width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--text-title-button-color);
+  background-color: var(--button-hover-color);
+}
