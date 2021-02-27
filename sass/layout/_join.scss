@@ -1,3 +1,9 @@
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-top: 0%;
+  }
+}
+
 .footer-title {
   font-weight: 700;
   font-size: 14px;
@@ -6,6 +12,11 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--text-title-button-color);
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .join-icon {

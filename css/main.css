@@ -105,7 +105,14 @@ a {
   line-height: 1.19;
   text-decoration: none;
   color: var(--color-black);
-  margin-right: 93px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-web {
@@ -118,6 +125,7 @@ a {
 
 .icon-group {
   width: 206px;
+  margin: auto;
 }
 
 .icon-box {
@@ -622,17 +630,57 @@ a {
 
 .footer-block {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
 }
 
-.footer-left {
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .footer-block {
+    max-width: 767px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block {
+    flex-direction: column;
+    max-width: 767px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-left {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-left {
+    justify-content: flex-start;
+    margin-right: 70px;
+  }
 }
 
 .footer-address {
   font-style: normal;
   line-height: 1.71;
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-bottom: 0px;
+  }
 }
 
 .address {
@@ -643,9 +691,11 @@ a {
 
 .contacts {
   flex-direction: column;
+  justify-content: center;
 }
 
 .contacts .footer-link {
+  justify-content: center;
   text-decoration: none;
   color: var(--footer-text-color);
 }
@@ -654,8 +704,25 @@ a {
   color: var(--button-hover-color);
 }
 
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-contacts:not(:last-child) {
   margin-bottom: 9px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-top: 0%;
+  }
 }
 
 .footer-title {
@@ -668,6 +735,13 @@ a {
   color: var(--text-title-button-color);
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .join-icon {
   fill: var(--text-title-button-color);
 }
@@ -678,11 +752,22 @@ a {
 }
 
 .subscribe-footer {
-  margin-left: 93px;
+  flex-direction: column;
+  margin-top: 60px;
 }
 
-.form-subscribe-footer {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscribe-footer {
+    margin-top: 0px;
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscribe-footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .input-mail-footer {
@@ -701,15 +786,13 @@ a {
   margin-right: 12px;
 }
 
-.footer-button {
-  display: flex;
-}
-
 .often-button {
+  display: flex;
   width: 200px;
   height: 50px;
   padding: 10px 29px;
-  margin-left: 0px;
+  margin: auto;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -722,6 +805,12 @@ a {
   color: var(--text-title-button-color);
   background: var(--button-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .often-button {
+    margin-top: 0px;
+  }
 }
 
 .icon-telegram {
