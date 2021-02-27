@@ -1,12 +1,24 @@
 .section-group {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--button-background-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team {
-  display: flex;
-  margin: -15px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -15px;
+  }
 
   & .name {
     font-weight: 500;
@@ -35,7 +47,11 @@
 }
 
 .team-text {
-  padding: 30px 32px;
+  padding: 30px 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
 }
 
 .team-icon {

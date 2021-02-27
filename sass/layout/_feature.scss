@@ -1,21 +1,36 @@
 .section-feature {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .icon-feature {
   display: flex;
-  width: 270px;
+  width: 450px;
   height: 120px;
   @include br(4px);
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   background-color: var(--button-background-color);
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .feature-list {
-  display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   & .title {
     font-weight: 700;
@@ -24,7 +39,6 @@
     margin-top: 0px;
     margin-bottom: 10px;
   }
-
   & .text {
     line-height: 1.71;
     color: var(--paragraph-color);
@@ -35,9 +49,23 @@
 }
 
 .desc {
-  max-width: 270px;
+  max-width: 450px;
+  margin-bottom: 30px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+
+    &:nth-last-child(2n) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    margin-bottom: 0px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
