@@ -635,6 +635,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer-block {
+    align-items: baseline;
+    margin: auto;
     max-width: 767px;
     flex-wrap: wrap;
   }
@@ -642,6 +644,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .footer-block {
+    margin: auto;
     flex-direction: column;
     max-width: 767px;
     flex-wrap: wrap;
