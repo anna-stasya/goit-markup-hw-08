@@ -11,7 +11,7 @@
 </head>
 <body>
     <!--header-->
-    <!-- <header>
+    <header>
         <div class="container hat">
             <nav class="main-nav hat">
                 <a href="./index.html" class="logo">  <span class="logo-web">Web</span>Studio </a>
@@ -20,7 +20,12 @@
                     <li class="item"> <a href="./portfolio.html" target="_blank" class="nav link"> Портфолио </a> </li>
                     <li class="item"> <a href="#" target="_blank" class="nav link"> Контакты </a> </li>
                 </ul>
-            </nav>        
+            </nav>
+            <button class="burger-btn" data-menu-button>   
+                <svg class="icon-burger" width="24px" height="16px">
+                    <use href="./img/Главная/sprite-icons.svg#icon-burger-px"></use>
+                </svg>
+            </button>
                 <ul class="auth list">
                     <li class="item">
                         <a href="mailto:info@devstudio.com" class="nav icons-contact link"> 
@@ -39,12 +44,57 @@
                         </a> 
                     </li>
                 </ul>
+        </div>
+
+        <!--mobile-menu-->
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-close" data-menu-close>
+                <svg  class="mobile-menu-close-back" width="18px" height="18px">
+                    <use href="./img/Главная/sprite-icons.svg#icon-close-back"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav list">
+                <li class="mobile-menu-item">
+                    <a href="./index.html" class="mobile-menu-link link current">Студия</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="./portfolio.html" class="mobile-menu-link link">Портфолио</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link link">Контакты</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu-contact list">
+                <li class="mobile-menu-contact-item">
+                    <a href="tel:+380961111111" class="mobile-menu-contact-tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-contact-item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu-contact-mail link">info@devstudio.com</a>
+                </li> 
+            </ul>
+
+            <ul class="mobile-menu-social list">
+                <li class="mobile-menu-social-item">
+                    <a href="#" class="mobile-social link">Instagram</a>
+                </li>
+                <li class="mobile-menu-social-item">
+                    <a href="#" class="mobile-social link">Twitter</a>
+                </li>
+                <li class="mobile-menu-social-item">
+                    <a href="#" class="mobile-social link">Facebook</a>
+                </li>
+                <li class="mobile-menu-social-item">
+                    <a href="#" class="mobile-social link">LinkedIn</a>
+                </li>
+            </ul>
+
         </div>    
-    </header> -->
+    </header>
 
     <main>  
         <!--hero-->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <div class="hero-pic">
                     <h1 class="hero-title"> Эффективные решения для вашего бизнеса </h1>
@@ -52,10 +102,10 @@
                     <button type="button" class="hero-button" data-modal-open> Заказать услугу </button>   
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--FEATURE-->
-        <section class="section-feature">
+        <!-- <section class="section-feature">
             <div class="container"> 
                 <h2 class="visually-hidden"> FEATURE </h2>
                 <ul class="feature-list list">
@@ -100,10 +150,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     
         <!--works-->
-         <section class="section-scroll">
+         <!-- <section class="section-scroll">
             <div class="container">
                 <h2 class="section-title"> Чем мы занимаемся </h2>
                 <ul class="picture list">
@@ -136,10 +186,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     
         <!--TEAM-->
-        <section class="section-group">
+        <!-- <section class="section-group">
             <div class="container">
                 <h2 class="section-title"> Наша команда </h2> 
                 <ul class="team list">
@@ -383,10 +433,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--CLIENTS-->
-        <section class="section-client">
+        <!-- <section class="section-client">
             <div class="container">
                 <h2 class="section-title"> Постоянные клиенты </h2>
                 <ul class="list clients-scroll">
@@ -435,14 +485,14 @@
                 </ul>
 
             </div>
-        </section>   
+        </section>    -->
     </main>
 
     <!--Footer-->
-    <footer class="footer-background">
-        <div class="container footer-block">
+    <!-- <footer class="footer-background">
+        <div class="container footer-block"> -->
     <!--Footer-Studio-->
-            <div class="footer-left">
+            <!-- <div class="footer-left">
                 <a href="./index.html" class="logo">  
                     <span class="logo-web">Web</span><span class="logo-studio">Studio</span> </a>
                 <address class="footer-address"> 
@@ -452,10 +502,10 @@
                         <li class="footer-contacts"><a href="tel:+380991111111" class="footer-link"> +38 099 111 11 11 </a> </li>
                     </ul>
                 </address>
-            </div>
+            </div> -->
 
     <!--Join-->
-            <div class="footer-join">
+            <!-- <div class="footer-join">
                 <h2 class="footer-title">Присоединяйтесь</h2>
                 <ul class="icon-group list">
                     <li class="socials">
@@ -490,10 +540,10 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
     <!-- Newsletter -->
-            <div class="subscribe-footer">
+            <!-- <div class="subscribe-footer">
                 <h2 class="footer-title">Подпишитесь на рассылку</h2>    
                 <form class="form-subscribe-footer">
                     <label for="email-footer" class="label-mail-footer"></label>
@@ -506,7 +556,7 @@
                     </svg>
                     </button>
                 </form>
-            </div>
+            </div> -->
 
         </div>
     </footer>
@@ -576,10 +626,10 @@
                     <button type="submit" class="often-button modal-button"> Отправить </button>  
                 </form>
 
-            <!-- </div> -->
         </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
