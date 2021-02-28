@@ -12,20 +12,30 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../img/Главная/hero-team/mobile-hero-team.jpg");
+    url("../../img/Главная/hero-team/tablet-hero-team.jpg");
   background-size: scale-down;
 
-  // @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-  //   screen and (min-resolution: 192dpi) and (min-width: 480px),
-  //   screen and (min-resolution: 2dppx) and (min-width: 480px) {
-  //   max-width: 480px;
-  //   background-image: linear-gradient(
-  //       to right,
-  //       rgba(47, 48, 58, 0.4),
-  //       rgba(47, 48, 58, 0.4)
-  //     ),
-  //     url("../../img/Главная/hero-team/mobile-hero-team@2x.jpg");
-  // }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
+    max-width: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/Главная/hero-team/tablet-hero-team@2x.jpg");
+  }
+
+  @media screen and (max-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/Главная/hero-team/mobile-hero-team.jpg");
+    background-size: scale-down;
+  }
 
   // ====================tablet===========================
 
