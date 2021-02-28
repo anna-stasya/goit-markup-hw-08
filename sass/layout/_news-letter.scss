@@ -2,10 +2,6 @@
   flex-direction: column;
   margin-top: 60px;
 
-  @media screen and (min-width: 768px) {
-    // margin-top: 102px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
     margin-left: 93px;
@@ -13,9 +9,6 @@
 }
 
 .form-subscribe-footer {
-  @media screen and (min-width: 767px) {
-  }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -38,10 +31,6 @@
   margin-right: 12px;
 }
 
-// .footer-button {
-//   display: flex;
-// }
-
 .often-button {
   display: flex;
 
@@ -50,7 +39,6 @@
   padding: 10px 29px;
   margin: auto;
   margin-top: 20px;
-  // margin-left: 0px;
 
   font-weight: 700;
   font-size: 16px;

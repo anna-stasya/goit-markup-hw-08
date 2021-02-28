@@ -31,6 +31,8 @@
   }
 }
 
+// ===================Footer-Studio=====================
+
 .footer-left {
   @media screen and (min-width: 768px) {
     margin-right: 165px;
@@ -54,6 +56,8 @@
 }
 
 .address {
+  display: flex;
+  justify-content: center;
   color: var(--text-title-button-color);
   margin-top: 0px;
   margin-bottom: 9px;

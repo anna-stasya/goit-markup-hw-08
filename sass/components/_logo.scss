@@ -20,7 +20,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
   }
 }
 
@@ -30,4 +29,17 @@
 
 .logo-studio {
   color: var(--text-title-button-color);
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }

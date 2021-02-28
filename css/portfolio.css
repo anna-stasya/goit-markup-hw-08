@@ -127,7 +127,6 @@ a {
   .logo {
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
   }
 }
 
@@ -137,6 +136,23 @@ a {
 
 .logo-studio {
   color: var(--text-title-button-color);
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    margin-right: 93px;
+  }
 }
 
 .icon-group {
@@ -630,6 +646,8 @@ a {
 }
 
 .address {
+  display: flex;
+  justify-content: center;
   color: var(--text-title-button-color);
   margin-top: 0px;
   margin-bottom: 9px;
