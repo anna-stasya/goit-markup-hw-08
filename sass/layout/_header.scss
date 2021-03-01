@@ -110,10 +110,11 @@
     color: var(--paragraph-color);
   }
 
-  // ========================mobile-menu-social
+  // ========================mobile-menu-social==================
 
   .mobile-menu-social {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     margin-bottom: 0;
   }
@@ -133,12 +134,17 @@
 
       margin-left: 10px;
 
-      &:not(:last-child) {
-        width: 22px;
-        height: 1px;
-        background-color: rgba(33, 33, 33, 0.2);
-        transform: rotate(90deg);
-      }
+      width: 22px;
+      height: 1px;
+      background-color: rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+
+      // &:not(:last-child) {
+      //   width: 22px;
+      //   height: 1px;
+      //   background-color: rgba(33, 33, 33, 0.2);
+      //   transform: rotate(90deg);
+      // }
     }
   }
 }

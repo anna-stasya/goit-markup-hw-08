@@ -310,6 +310,7 @@ a {
   }
   .mobile-menu-social {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     margin-bottom: 0;
   }
@@ -323,8 +324,6 @@ a {
     content: "";
     display: inline-block;
     margin-left: 10px;
-  }
-  .mobile-social::after:not(:last-child) {
     width: 22px;
     height: 1px;
     background-color: rgba(33, 33, 33, 0.2);
