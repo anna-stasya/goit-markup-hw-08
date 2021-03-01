@@ -5,13 +5,13 @@
 }
 
 .footer-block {
-  display: flex;
   justify-content: center;
 
   @media screen and (min-width: 768px) {
+    display: flex;
     align-items: baseline;
     margin: auto;
-    max-width: 767px;
+    max-width: 768px;
     flex-wrap: wrap;
   }
 
