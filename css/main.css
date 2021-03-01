@@ -67,6 +67,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--main-text-color);
 }
 
 .container {
@@ -279,6 +280,7 @@ a {
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+    color: var(--main-text-color);
   }
   .mobile-menu-item:not(:last-child),
   .mobile-menu-contact-item:not(:last-child) {
@@ -439,7 +441,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-color: var(--background-footer);
   background-position: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/Главная/hero-team/tablet-hero-team.jpg");
   background-size: scale-down;
