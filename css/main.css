@@ -99,6 +99,7 @@ a {
 
 .container.hat {
   width: 100%;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -401,6 +402,7 @@ a {
 .auth {
   flex-wrap: wrap;
   margin-left: 84px;
+  align-items: center;
 }
 
 .auth .link {
@@ -411,8 +413,27 @@ a {
   color: var(--button-hover-color);
 }
 
+@media screen and (min-width: 768px) {
+  .auth {
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 84px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .auth {
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 84px;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .auth {
+    display: flex;
     margin-left: auto;
     align-items: center;
   }
@@ -443,22 +464,23 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-position: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Главная/hero-team/tablet-hero-team.jpg");
   background-size: scale-down;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Главная/hero-team/mobile-hero-team.jpg");
+    background-size: scale-down;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
     max-width: 480px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/Главная/hero-team/tablet-hero-team@2x.jpg");
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Главная/hero-team/mobile-hero-team.jpg");
-    background-size: scale-down;
   }
 }
 

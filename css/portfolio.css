@@ -98,6 +98,7 @@ a {
 
 .container.hat {
   width: 100%;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -400,6 +401,7 @@ a {
 .auth {
   flex-wrap: wrap;
   margin-left: 84px;
+  align-items: center;
 }
 
 .auth .link {
@@ -410,8 +412,27 @@ a {
   color: var(--button-hover-color);
 }
 
+@media screen and (min-width: 768px) {
+  .auth {
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 84px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .auth {
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 84px;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .auth {
+    display: flex;
     margin-left: auto;
     align-items: center;
   }
