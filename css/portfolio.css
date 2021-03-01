@@ -379,6 +379,12 @@ a {
   line-height: 14px;
 }
 
+@media screen and (min-width: 1200px) {
+  .icons-contact {
+    padding-bottom: 0px;
+  }
+}
+
 .site .item:not(:last-child) {
   margin-right: 40px;
 }
