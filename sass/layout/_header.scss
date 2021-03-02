@@ -140,12 +140,12 @@
       background-color: rgba(33, 33, 33, 0.2);
       transform: rotate(90deg);
 
-      // &:not(:last-child) {
-      //   width: 22px;
-      //   height: 1px;
-      //   background-color: rgba(33, 33, 33, 0.2);
-      //   transform: rotate(90deg);
-      // }
+      &:not(:last-child) {
+        width: 22px;
+        height: 1px;
+        background-color: rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+      }
     }
   }
 }
