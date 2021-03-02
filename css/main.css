@@ -463,6 +463,7 @@ a {
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
+  height: 400px;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Главная/hero-team/tablet-hero-team.jpg");
   background-size: scale-down;
@@ -470,6 +471,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .hero {
+    max-width: 480px;
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Главная/hero-team/mobile-hero-team.jpg");
     background-size: scale-down;
