@@ -1,5 +1,4 @@
 .objects {
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -34,7 +33,7 @@
 }
 
 .objects-box {
-  width: 450px;
+  max-width: 450px;
   margin-right: 0px;
   margin-bottom: 30px;
 

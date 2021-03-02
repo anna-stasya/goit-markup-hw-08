@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  // width: 100vh;
+
   padding-left: 15px;
   padding-right: 15px;
 
@@ -20,13 +20,11 @@
   }
 
   &.hat {
-    width: 100%;
     max-width: 1600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     position: relative;
-    border-bottom: 1px solid #ececec;
   }
 }

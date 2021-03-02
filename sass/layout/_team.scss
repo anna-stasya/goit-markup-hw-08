@@ -49,7 +49,15 @@
 .team-text {
   // display: flex;
   // justify-content: center;
+
+  // стояло до правок
+  // padding: 30px 24px;
+
   padding: 30px 24px;
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 24px 74px;
+  // }
 
   @media screen and (min-width: 1200px) {
     padding: 30px 32px;

@@ -96,13 +96,11 @@ a {
 }
 
 .container.hat {
-  width: 100%;
   max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -460,6 +458,8 @@ a {
 
 .main-portfolio {
   padding-top: 94px;
+  padding-bottom: 94px;
+  border-top: 1px solid #ececec;
 }
 
 .filter {
@@ -515,7 +515,6 @@ a {
 }
 
 .objects {
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -551,7 +550,7 @@ a {
 }
 
 .objects-box {
-  width: 450px;
+  max-width: 450px;
   margin-right: 0px;
   margin-bottom: 30px;
   border: 1px solid var(--border-line);
@@ -818,6 +817,12 @@ a {
 .footer-button {
   display: flex;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-button {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
