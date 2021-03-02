@@ -3,10 +3,10 @@
   padding-top: 118px;
   padding-bottom: 118px;
   @include push--auto;
-  max-width: 480px;
-  height: 400px;
+  width: 100%;
   background-size: cover;
   background-position: center;
+  max-width: 480px;
 
   background-image: linear-gradient(
       to right,
@@ -14,21 +14,26 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/Главная/hero-team/mobile-hero-team.jpg");
+  background-size: scale-down;
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-    screen and (min-resolution: 192dpi) and (min-width: 480px),
-    screen and (min-resolution: 2dppx) and (min-width: 480px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../img/Главная/hero-team/mobile-hero-team@2x.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/Главная/hero-team/mobile-hero-team@2x.jpg");
+    }
   }
+}
 
-  // ====================tablet===========================
+// ====================tablet===========================
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
     max-width: 768px;
     background-image: linear-gradient(
         to right,
@@ -38,23 +43,26 @@
       url("../img/Главная/hero-team/tablet-hero-team.jpg");
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    background-color: var(--background-footer);
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../img/Главная/hero-team/tablet-hero-team@2x.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-color: var(--background-footer);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/Главная/hero-team/tablet-hero-team@2x.jpg");
+    }
   }
+}
 
-  // ====================desctop===========================
+// ====================desctop===========================
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .hero {
     max-width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
@@ -65,16 +73,18 @@
       url("../img/Главная/hero-team/desctop-hero-team.jpg");
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-color: var(--background-footer);
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../img/Главная/hero-team/desctop-hero-team@2x.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-color: var(--background-footer);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/Главная/hero-team/desctop-hero-team@2x.jpg");
+    }
   }
 }
 
