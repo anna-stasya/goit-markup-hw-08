@@ -1,10 +1,10 @@
 .section-scroll {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .section-scroll {
     padding-top: 94px;
     padding-bottom: 94px;
