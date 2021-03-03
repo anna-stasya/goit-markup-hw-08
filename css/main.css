@@ -464,9 +464,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  max-width: 480px;
+  height: 400px;
   background-size: cover;
   background-position: center;
-  max-width: 480px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Главная/hero-team/mobile-hero-team.jpg");
   background-size: scale-down;
 }
@@ -493,6 +494,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1207,13 +1209,18 @@ a {
 }
 
 .checkbox-label {
-  display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   font-size: 12px;
   line-height: 14px;
   line-height: 1.16;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox-label {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -4,9 +4,10 @@
   padding-bottom: 118px;
   @include push--auto;
   width: 100%;
+  max-width: 480px;
+  height: 400px;
   background-size: cover;
   background-position: center;
-  max-width: 480px;
 
   background-image: linear-gradient(
       to right,
@@ -62,6 +63,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
