@@ -692,6 +692,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .section-group .team-preview {
+    width: 100%;
+  }
+}
+
 .team {
   flex-wrap: wrap;
 }

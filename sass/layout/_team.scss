@@ -10,6 +10,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
+  & .team-preview {
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
 }
 
 .team {
