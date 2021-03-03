@@ -12,11 +12,10 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
-    padding-left: 79px;
+    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 280px;
     min-width: 611px;
   }
 
@@ -24,7 +23,7 @@
     display: inline-block;
     @include br(4px);
     padding: 6px 22px;
-    min-width: 103px;
+    // min-width: 103px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;

@@ -242,12 +242,15 @@ a {
     z-index: 2;
     width: 100%;
     height: 100%;
+    min-height: 320px;
     max-width: 766px;
+    overflow: scroll;
     padding: 48px 40px;
     top: 0%;
     left: 50%;
     transform: translateX(-50%) translateY(-201%);
     background-color: var(--text-title-button-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu.is-open {
@@ -369,7 +372,7 @@ a {
 }
 
 .icons-contact {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   padding-top: 0px;
   font-size: 12px;
   line-height: 14px;
@@ -420,6 +423,9 @@ a {
     margin-left: 84px;
     align-items: center;
   }
+  .auth .item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1199px) {
@@ -428,6 +434,9 @@ a {
     flex-wrap: wrap;
     margin-left: 84px;
     align-items: center;
+  }
+  .auth .item:first-child {
+    margin-bottom: 0px;
   }
 }
 
