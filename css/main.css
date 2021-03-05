@@ -591,10 +591,18 @@ a {
 
 .feature-list .title {
   font-weight: 700;
+  text-align: center;
   line-height: 1.14;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 10px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list .title {
+    text-align: left;
+  }
 }
 
 .feature-list .text {
